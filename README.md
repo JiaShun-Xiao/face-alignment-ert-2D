@@ -24,10 +24,10 @@ learning rate v is 0.1, number of regressor in the casecade is T=10, and each rt
 
 ### Dependence
 
-Python 3.6.8 
-numpy 1.16.2 
-menpo 0.8.1 
-menpodetect 0.5.0 
+Python 3.6.8 <br>
+numpy 1.16.2 <br>
+menpo 0.8.1 <br>
+menpodetect 0.5.0 <br>
 menpofit 0.5.0
 
 ### Reference
