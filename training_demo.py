@@ -44,3 +44,7 @@ except:
     pass
 ibug_exam_gt = deepcopy(ibug_exam)
 ibug_exam_gt.view_landmarks()
+
+ibug_exam.landmarks['PTS'].points = fin_shapes[0].points
+ibug_exam_predict = deepcopy(ibug_exam)
+ibug_exam_predict.view_landmarks(marker_face_colour='y',marker_edge_colour='y')
