@@ -16,6 +16,8 @@ class TreeBuilder(RegressorBuilder):
         node_cnts = np.zeros(self.n_nodes_leafs) # num of images in each node
         node_buckets = np.zeros(self.n_nodes_leafs,dtype=object) # dividing images into two parts in each node
         node_buckets[0] = (0, len(targets))
+        node_cnts[0] = len(targets)
+        node_sums[0] = targets.sum(axis=0)
         best_splits = []
         permute = np.arange(0, len(targets), dtype=int) # permute order of pixel 
         
