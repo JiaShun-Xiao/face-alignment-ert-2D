@@ -65,7 +65,7 @@ def fit_shape_to_box(normal_shape, box):
     center_y = y + h/2.0
 
     shape = normal_shape.points - normal_shape.centre()
-    shape *= [0.9*h/2.0, 0.9*w/2.0]
+    shape *= [0.9*w/2.0, 0.9*h/2.0]
     shape += [center_x, center_y]
 
     return PointCloud(shape)
